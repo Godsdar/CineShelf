@@ -35,9 +35,9 @@ export async function SiteHeader() {
             aria-hidden="true"
             className="grid size-7 place-items-center rounded-md bg-accent text-xs font-black text-white"
           >
-            F
+            C
           </span>
-          Feedles
+          CineShelf
         </Link>
 
         <Link

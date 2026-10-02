@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Feedles — Movie Search",
-    template: "%s · Feedles",
+    default: "CineShelf — Movie Search",
+    template: "%s · CineShelf",
   },
   description: "A tiny movie database built to learn Next.js and Postgres.",
 };

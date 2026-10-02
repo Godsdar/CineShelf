@@ -41,7 +41,7 @@ const WIKI: Record<string, string> = {
 
 // The API wants a descriptive UA; the image CDN rejects non-browser UAs.
 const API_UA =
-  "FeedlesLearning/1.0 (https://github.com/feedles/feedles; feedles@example.com)";
+  "CineShelfLearning/1.0 (https://github.com/Godsdar/cineshelf; cineshelf@example.com)";
 const BROWSER_UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36";
 

@@ -1,8 +1,8 @@
-# Feedles
+# CineShelf
 
 A movie search app with real posters, a personal watchlist and sign-in.
 
-![Feedles home page](docs/home.jpg)
+![CineShelf home page](docs/home.jpg)
 
 ## What it does
 

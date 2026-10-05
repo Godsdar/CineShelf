@@ -6,16 +6,7 @@ import { redirect } from "next/navigation";
 import { auth } from "@/auth";
 import { db } from "@/db";
 import { watchlist } from "@/db/schema";
-
-function parseMovieId(formData: FormData): number {
-  const id = Number(formData.get("movieId"));
-
-  if (!Number.isInteger(id) || id <= 0) {
-    throw new Error("Invalid movie id");
-  }
-
-  return id;
-}
+import { parseMovieId } from "@/lib/validate";
 
 /**
  * Server Actions are public POST endpoints, so authorization must be checked

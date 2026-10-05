@@ -1,5 +1,7 @@
 # CineShelf
 
+[![CI](https://github.com/Godsdar/CineShelf/actions/workflows/ci.yml/badge.svg)](https://github.com/Godsdar/CineShelf/actions/workflows/ci.yml)
+
 A movie search app with real posters, a personal watchlist and sign-in.
 
 ![CineShelf home page](docs/home.jpg)
@@ -26,6 +28,24 @@ cp .env.example .env    # set AUTH_SECRET: openssl rand -base64 32
 bun run db:migrate && bun run db:seed && bun run db:posters
 bun run dev             # https://localhost:3000
 ```
+
+## Tests and CI
+
+```bash
+bun run lint        # ESLint
+bun run typecheck   # next typegen + tsc --noEmit
+bun run test        # Vitest (unit tests)
+bun run build       # production build
+```
+
+Unit tests (Vitest) cover `src/lib/validate.ts`, `src/lib/images.ts` and the query
+wrappers in `src/lib/movies.ts` / `src/lib/watchlist.ts` (database access is mocked).
+CI (`.github/workflows/ci.yml`) runs lint, typecheck, tests, migrations and a build
+against a throwaway PostgreSQL service.
+
+## Deploy (free tier)
+
+Step-by-step: [docs/deploy-vercel-neon.md](docs/deploy-vercel-neon.md) — Vercel (Hobby) + Neon free Postgres, no paid services.
 
 ## Auth
 

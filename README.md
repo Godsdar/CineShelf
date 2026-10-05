@@ -4,6 +4,8 @@
 
 A movie search app with real posters, a personal watchlist and sign-in.
 
+Live demo: https://cine-shelf-lemon.vercel.app
+
 ![CineShelf home page](docs/home.jpg)
 
 ## What it does
